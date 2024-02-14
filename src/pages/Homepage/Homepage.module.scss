@@ -1,0 +1,24 @@
+.main {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 50px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 32px;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    background-color: transparent;
+    padding: 0;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 210px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+
+  li a {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.nav ul li a:global(.active) {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 145px;
+  }
+
+  .nav ul {
+    gap: 26px;
+
+    li a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .nav ul li a {
+    font-size: 12px;
+  }
+}

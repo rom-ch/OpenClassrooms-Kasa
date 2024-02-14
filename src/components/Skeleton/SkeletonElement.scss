@@ -1,0 +1,87 @@
+.skeleton {
+  background-color: #ddd;
+  border-radius: 4px;
+
+  &.gallery {
+    height: 340px;
+    border-radius: 10px;
+  }
+
+  &.carousel {
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  &.title {
+    height: 44px;
+    width: 800px;
+    margin-bottom: 10px;
+  }
+  &.subtitle {
+    height: 22px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  &.tags {
+    height: 25px;
+    width: 365px;
+  }
+
+  &.hostname {
+    width: 80px;
+    height: 52px;
+  }
+
+  &.avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  &.rating {
+    width: 196px;
+    height: 36px;
+  }
+
+  &.accordion {
+    width: 100%;
+    height: 52px;
+  }
+}
+
+.skeleton-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 50px;
+}
+
+.skeleton-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 24px;
+}
+
+.skeleton-host {
+  .host-infos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 21px;
+  }
+}
+
+.skeleton-accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.3vw;
+}
