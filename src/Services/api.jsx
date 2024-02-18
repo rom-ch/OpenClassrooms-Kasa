@@ -1,6 +1,6 @@
 export default class Api {
   constructor() {
-    this.url = "https://localhost:5173/data/logements.json";
+    this.url = "/data/logements.json";
   }
 
   async getAccomodations() {
