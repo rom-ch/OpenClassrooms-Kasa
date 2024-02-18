@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./Carousel.module.scss";
+import chevronLeft from "./../../../assets/chevron_left.svg";
+import chevronRight from "./../../../assets/chevron_right.svg";
 
 function Carousel({ title, slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,13 +26,13 @@ function Carousel({ title, slides }) {
             className={`${styles.btn} ${styles.btn_left}`}
             onClick={goToPrevious}
           >
-            <img src="../../../assets/chevron_left.svg" alt="chevron left" />
+            <img src={chevronLeft} alt="chevron left" />
           </button>
           <button
             className={`${styles.btn} ${styles.btn_right}`}
             onClick={goToNext}
           >
-            <img src="../../../assets/chevron_right.svg" alt="chevron right" />
+            <img src={chevronRight} alt="chevron right" />
           </button>
           <span className={styles.photo_index}>
             {currentIndex + 1}/{slides.length}
