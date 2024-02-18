@@ -1,12 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
-import styles from './Header.module.scss';
+import styles from "./Header.module.scss";
+import logo from "../../../assets/logo.svg";
 
 function Header() {
   return (
     <header className={`${styles.header} pad`}>
       <div className={styles.logo}>
         <Link to="/">
-          <img src="../../assets/logo.svg" />
+          <img src={logo} />
         </Link>
       </div>
       <nav className={styles.nav}>

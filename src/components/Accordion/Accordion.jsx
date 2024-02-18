@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Accordion.module.scss";
+import chevronDown from "../../../assets/chevron_down.svg";
 
 function Accordion({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ function Accordion({ title, content }) {
         <span>{title}</span>
         <span>
           <img
-            src="../../../assets/chevron_down.svg"
+            src={chevronDown}
             alt=""
             style={{ transform: isOpen ? "rotate(180deg)" : "" }}
           />
