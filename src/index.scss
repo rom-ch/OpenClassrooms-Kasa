@@ -17,8 +17,14 @@ body {
   font-weight: 500;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .pad {
-  margin: 45px 7% 0;
+  margin: 45px 7% 50px;
 }
 
 @media (max-width: 1024px) {

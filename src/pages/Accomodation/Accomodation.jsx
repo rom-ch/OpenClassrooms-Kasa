@@ -45,7 +45,7 @@ function Accomodation() {
         {accomodation && !isLoading && (
           <>
             <section>
-              <Carousel slides={accomodation.pictures} />
+              <Carousel slides={accomodation.pictures} title={accomodation.title} />
             </section>
             <section className={styles.infos}>
               <div className={styles.acc}>

@@ -40,7 +40,11 @@ function Carousel({ title, slides }) {
         </>
       )}
 
-      <img className={styles.slide} src={slides[currentIndex]} alt={title} />
+      <img
+        className={styles.slide}
+        src={slides[currentIndex]}
+        alt={`photo ${title}`}
+      />
     </div>
   );
 }

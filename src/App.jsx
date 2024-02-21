@@ -9,14 +9,16 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="accomodation/:id" element={<Accomodation />} />
-        <Route path="about" element={<About />} />
-        <Route path="/" element={<Homepage />} />
-        <Route path="/*" element={<PageNotFound />} />
-      </Routes>
-      <Footer />
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="accomodation/:id" element={<Accomodation />} />
+          <Route path="about" element={<About />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/*" element={<PageNotFound />} />
+        </Routes>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
